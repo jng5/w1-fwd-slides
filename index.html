@@ -1,19 +1,13 @@
 <!doctype html>
 <html lang="en">
-
 	<head>
 		<meta charset="utf-8">
-
 		<title>reveal.js – The HTML Presentation Framework</title>
-
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
-
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/julie.css" id="theme">
 
@@ -40,25 +34,138 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 
-
-				<section>
-					<h2>Title Slide</h2>
+				<section class="chapter-black center" data-background="#34495e">
+					<h2>Architectural Adventures in Startups and Enterprise</h2>
 					<br><br>
-					<p>
-						Julie Ng<br>
-						Date
+					<p style="color:rgba(255,255,255,0.3);">
+						Julie Ng<br><br>
+						W1 FWD Build Week<br>
+						20 June 2017
 					</p>
 				</section>
 
+				<!-- About Me -->
+	  		<section>
+          <h2>About Me</h2>
+          <img src="images/julie.jpg" class="stretch">
+          <ul>
+          	<li>Enterprise Architect, Allianz Deutschland AG</li>
+            <li>Previously: UX Designer, Full Stack Developer, failed entrepreneuer</li>
+          </ul>
+        </section>
 
+	  		<section>
+          <h2>Allianz ATCs</h2>
+					<div class="stretch" style="height:400px">
+						<img src="images/sd-1.png" style="display:inline-block;margin:0 1em;max-width:33%">
+						<img src="images/atc.jpg" style="display:inline-block;margin:0 1em;max-width:50%">
+					</div>
+				 	<ul>
+          	<li>Agile Training Center</li>
+          	<li>Internal Startup Laboratory</li>
+            <li>Startup methodologies and technologies</li>
+          </ul>
+        </section>
 
-			</div>
+        <!-- Architecture -->
 
-		</div>
+        <section class="chapter-black center" data-background="#34495e">
+          <h2>What is an <span style="color:#f1c40f">architect</span>?</h2>
+        </section>
+
+        <section>
+          <h2>What is architecture?</h2>
+          <blockquote>
+            <strong>Design decisions</strong> about any system that keep implementators and maintainers form exercising needless creativity.
+          </blockquote>
+          <p class="caption" align="right">
+            - D'Souza, Wills. <em>Objects, Components, and Frameworks with UML: The Catalysis (SM) Approach</em>; Addison-Wesley Professional 1998
+          </p>
+        </section>
+
+        <!-- Decisions -->
+
+        <section>
+          <h2>Decisions</h2>
+					<ul>
+						<li>Make <em>informed</em> decisions.</li>
+						<li>Your decisions are for <em>you</em>, not me or internet hype.</li>
+						<li>Stand by your decisions <span class="fragment">- have opinions…</span></li>
+						<li class="fragment">…loosely held - you will be wrong.</li>
+          </ul>
+          <p class="caption">Source: Monteiro, <em>Mike. Design Is a Job</em>. A Book Apart 2012</p>
+        </section>
+
+        <!-- My Architecture  -->
+
+        <section>
+          <h2>An Opinionated Approach</h2>
+          <p>Skateboard, Bike, Car</p>
+          <img src="images/skateboard-bike-car.png" class="stretch">
+          <p class="caption">Source: Wilkinson, Andrew. <em>"Building Products The MetaLab Way"</em><br>https://medium.com/@awilkinson/skateboard-bike-car-6bec841ed96e</p>
+          <p class="fragment"><strong><em>&rarr; Iterate!</em></strong></p>
+        </section>
+
+        <!-- Systems -->
+
+        <section>
+          <h2>Architecture and Clean Code</h2>
+
+          <blockquote style="margin-bottom:20px">
+            It is not necessary to do a Big Design Up Front (BDUF). In fact, BDUF is even harmful because it inhibits adapting to change
+          </blockquote>
+          <p class="caption" align="right">
+            - Martin, Robert C. <em>Clean Code</em> (p. 167).
+          </p>
+
+          <p>&rarr; <strong>flexibility</strong> - always be learning and adapting</p>
+        </section>
+
+        <!-- Small -->
+
+        <section>
+          <h2>Small and Testable</h2>
+          <blockquote style="margin-bottom:20px">
+            A system with many small classes as no more moving parts than a system with a few large classes.
+          </blockquote>
+          <p class="caption" align="right">
+           - Martin, Robert C. <em>Clean Code</em> (p. 139).
+          </p>
+          <p>&rarr; Maintainable software</p>
+        </section>
+
+        <!-- Code -->
+
+				<section class="chapter-black center" data-background="#222">
+          <h2>$ git push</h2>
+        </section>
+
+        <section class="chapter-black center" data-background="#34495e">
+          <h2>{ Code }</h2>
+        </section>
+
+        <!-- Jenkins -->
+
+        <section>
+          <h2>Continuous Delivery</h2>
+          <div style="position: relative">
+          	<img src="images/jenkins.png" style="width:100px;position:absolute;bottom:-10px;right:0;">
+          	<img src="images/jenkins2-harpreet-blog2-3.png">
+          </div>
+          <p class="caption">
+          	Image Source: <br>
+          	https://www.cloudbees.com/sites/default/files/
+          </p>
+          <p class="fragment">&rarr; Move <strong>fast</strong> and automate learning</p>
+        </section>
+
+        <!-- Tests -->
+
+			</div><!-- /.slides -->
+		</div><!-- /.reveal -->
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
 
 			// Full list of configuration options available at:
@@ -83,6 +190,5 @@
 			});
 
 		</script>
-
 	</body>
 </html>
